@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A cute birthday wish site with personalized messages and images."> <!-- New: For better SEO and description -->
+    <title>Birthday Wishes for My Love</title> <!-- Updated title for personalization -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <!-- Ensure animations are linked -->
+</head>
+<body>
+    <h1>Send a Special Birthday Wish!</h1> <!-- Minor update for a warmer feel -->
+    <div id="wish-container" class="animate__animated animate__fadeIn">
+        <input type="text" id="name-input" placeholder="Enter a name, like 'Hayati'...">
+        <button id="generate-btn">Generate Wish</button>
+        <div id="messages-display"></div> <!-- Where messages from JS are displayed -->
+        <img id="image-output" src="" alt="Cute Birthday Image" style="display: none; max-width: 300px;">
+        <button id="next-btn" style="display: none;">Next Set</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

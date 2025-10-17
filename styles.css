@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif; /* Added fallback for emoji support: 'Segoe UI Emoji', */
+    background-color: #e6f7ff; /* Light blue theme, as suggested earlier */
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+h1 {
+    color: #007bff; /* Blue for headings, keeps the cute theme */
+    font-size: 2em;
+}
+
+#wish-container {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#messages-display p {
+    font-size: 1.2em;
+    color: #ff69b4; /* Pink for messages, to match the loving theme */
+    margin: 10px 0;
+    opacity: 0; /* Start hidden for transition */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    word-wrap: break-word; /* New: Ensures long messages wrap properly */
+    font-family: 'Arial', 'Segoe UI Emoji', sans-serif; /* Ensures emojis display correctly */
+}
+
+#messages-display p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+img#image-output {
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    max-width: 100%; /* Ensures images are responsive on mobile */
+}
+
+@media (max-width: 600px) {
+    #wish-container {
+        max-width: 95%; /* Improved responsiveness */
+    }
+    h1 {
+        font-size: 1.5em; /* Smaller heading on mobile */
+    }
+}
